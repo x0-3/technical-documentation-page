@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical-Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Chakma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header><h1>PHP</h1></header>
+
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#PHP" class="nav-link">PHP</a>
+        <a href="#object" class="nav-link">object</a>
+        <a href="#Variables" class="nav-link">Variables</a>
+        <a href="#Declaring_variables" class="nav-link">Declaring variables</a>
+    </nav>
+
+    <main id="main-doc">
+
+        
+        <section class="main-section" id="Introduction">
+            <header><h2>Introduction</h2></header>
+            <p>Coding, also known as programming, is the process of creating software, apps, and websites. It involves using a programming language, such as Python or JavaScript, to write instructions for a computer to execute. These instructions, or code, tell the computer what to do, such as performing calculations, displaying information, or responding to user input.</p>
+            <p>Coding is a valuable skill that is in high demand across a wide range of industries, as almost every aspect of modern life relies on technology in some way. It allows us to automate tasks, create new tools and services, and solve problems in ways that were previously unimaginable. With the rise of the internet and mobile devices, coding has become more accessible than ever before. Today, anyone can learn how to code and use their skills to create new technologies or contribute to existing ones.</p>
+            <p>Coding can be a challenging, but rewarding process. It requires attention to detail, problem-solving skills, and the ability to think logically. However, with practice and persistence, anyone can learn how to code and create their own software and projects. It's not only a great career choice but also allows you to unleash your creativity and innovate. There are many resources available, whether you are looking to start learning as a beginner or to brush up your skills as a seasoned developer.</p>
+            <li>example of a hello world</li>
+            <code>echo "Hello, World!";</code>
+            
+
+        </section>
+
+        <section class="main-section" id="PHP">
+            <header><h2>PHP</h2></header>
+            <p>PHP is a server-side scripting language that is primarily used for web development. It is widely-used, open-source and runs on various platforms such as Windows, Linux, and macOS. It allows for the creation of dynamic web pages and web applications that can interact with databases, process user input and perform various other functions.</p>
+            <p>PHP code is executed on the server, which then generates the necessary HTML, CSS, and JavaScript to be sent to the client's web browser. This allows for the separation of concerns, making it easier to maintain and update the website or application. It also enables the server to perform certain tasks that are not possible with client-side languages like JavaScript.</p>
+            <p>It also has a large community and a wide variety of libraries and frameworks, such as Laravel and CodeIgniter, that can help speed up development and make it more efficient. This can make the development process easier and faster, allowing developers to focus on their application's functionality and user experience.</p>
+            <li>here's an example of a PHP script that calculates the area of a circle based on user input:</li>
+            <code>$radius = $_GET['radius']; <br>
+                $area = 3.14159 * ($radius * $radius);<br>
+                echo "The area of a circle with radius " . $radius . " is " . $area;
+            </code>
+            
+
+        </section>
+
+        <section class="main-section" id="object">
+            <header><h2>object</h2></header>
+            <p>An object in programming is a data structure that contains a collection of properties and methods. Properties are variables that store data, and methods are functions that perform actions. Objects in programming can represent real-world entities, such as a person, car, or bank account, and can be used to organize and manipulate data in a program.</p>
+            <p>One of the key features of objects is encapsulation, which is the ability to hide the internal details of an object and expose only the necessary information to the outside world. This allows for a more modular and maintainable codebase by keeping the implementation details of an object separate from its interface. This way, other parts of the codebase can interact with the object through its interface and should not need to know the internal details to work correctly.</p>
+            <p>Object-oriented programming is a programming paradigm based on the concept of objects. It's a way of organizing code that is built around creating and manipulating objects. languages like Java, C#, Python, C++, Ruby and PHP all have an object-oriented structure and support the concept of classes and objects. The main difference from other paradigms is that it focuses on the data and methods that are associated with an object, rather than the object itself. This allows for the creation of reusable and modular code, which helps to make the development process more efficient and maintainable.</p>
+            <li>here's an example of an object in PHP:</li>
+            <code>class Car { <br>
+                public $make; <br>
+                public $model; <br>
+                public $year;<br>
+            
+                public function getMakeAndModel() {<br>
+                    return $this->make . " " . $this->model;<br>
+                } <br>
+            } <br>
+            
+            $myCar = new Car(); <br>
+            $myCar->make = "Toyota";<br>
+            $myCar->model = "Camry";<br>
+            $myCar->year = "2020";<br>
+            
+            echo $myCar->getMakeAndModel(); // Outputs "Toyota Camry"<br>
+            </code>
+            
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header><h2>Variables</h2></header>
+            <p>In PHP, a variable is a container for storing a value. Variables in PHP start with a dollar sign ($), followed by the variable name. The name of the variable must start with a letter or an underscore, and can only contain letters, numbers, and underscores.</p>
+            <li>For example, the following code declares a variable named $x and assigns it the value 5:</li>
+            <code>$x = 5;
+            </code>
+            <p>Once a variable is declared, its value can be accessed and modified throughout the program. Additionally, PHP supports a variety of data types, including integers, floats, strings, and arrays. These data types allow you to store and manipulate different types of data in your program.</p>
+            <p>In PHP you don't need to declare the data type of the variable when you first create it.
+            This can be a double edged sword, sometimes the flexibility cause confusion.
+            It's good to have a plan in your mind when you're working on any project with PHP, in order to keep track of your variables data type and be aware of any unexpected changes.</p>
+            
+        </section>
+
+        <section class="main-section" id="Declaring_variables">
+            <header><h2>Declaring variables</h2></header>
+            <p>In PHP, variables are used to store and manipulate values in a program. To create a variable in PHP, you start with a dollar sign ($), followed by the name of the variable. The name of the variable must start with a letter or an underscore, and can only contain letters, numbers, and underscores. For example, the following code declares a variable named $x:</p>
+            <code>$x;
+            </code>
+            <li>You can also assign a value to a variable when it is declared. For example, the following code declares a variable named $x and assigns it the value 5:</li>
+            <code>$x = 5;
+            </code>
+            <p>Once a variable is declared, it can be used throughout the program to store and manipulate data. You can assign different types of data to variables, such as integers, floats, strings, and arrays.</p>
+            <p>In PHP you don't need to declare the data type of the variable when you first create it, but it's good practice to initialize the variable with its correct type as soon as possible.
+            It's also important to consider the naming convention of your variable. It's good practice to use meaningful and descriptive variable names, so that it's clear what the variable is used for when reading the code.</p>
+        </section>
+
+    </main>
+    
+</body>
+</html>
